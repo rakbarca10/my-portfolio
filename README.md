@@ -1,4 +1,4 @@
 # PortFolio_Website
 
 
-## To execute this project just open index.html file in the browser.
+https://rakshith10-portfolio.netlify.app/index.html#
