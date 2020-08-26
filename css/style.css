@@ -113,10 +113,10 @@
   color: white;
 }
 
-.content-writing {width: 90%; background-color: #4CAF50;}
-.web-development {width: 80%; background-color: #2196F3;}
-.cloud {width: 65%; background-color: #f44336;}
-.marketing {width: 60%; background-color: #808080;}
+.web-development {width: 90%; background-color: #4CAF50;}
+.content-writing {width: 80%; background-color: #2196F3;}
+.marketing {width: 65%; background-color: #f44336;}
+.cloud {width: 60%; background-color: #808080;}
 
 /* Start Brand Area */ 
 
