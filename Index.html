@@ -36,14 +36,39 @@
 </head>
 	
 
-<body>
+<body onload="myFunction()">
+	<!-- Loader -->
+  <!-- <div id="lw" class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div> -->
+  <!-- <script>
+    $(window).on("load",function(){
+      $(".preload").fadeOut("slow");
+    });
+</script> -->
 	<div class="preload">
 	<img class="airplane" src="./img/airplane.jpg" alt="airplane">
 		<h3>Landing On The Website... </h3>
-		<img class="cloud1" src="./img/cloud.png" alt="cloud1">
-		<img class="cloud2" src="./img/cloud.png" alt="cloud2">
-		<img class="cloud3" src="./img/cloud.png" alt="cloud3">
+		<img class="cloud1" src="./img/cloud.jpg" alt="cloud1">
+		<img class="cloud2" src="./img/cloud.jpg" alt="cloud2">
+		<img class="cloud3" src="./img/cloud.jpg" alt="cloud3">
 	</div>
+	<!-- <script>
+    window.addEventListner('load',function(){
+      const preload=document.querySelector('.preload');
+      preload.classList.add('preload-finish');
+    });
+  </script> -->
+  <script>
+    function myFunction()
+{
+   // alert("working...");
+    document.getElementById("preload").style.display = "none";
+      window.i=1;
+      window.count=1;
+}
+</script>
+ 
 
     <!--  ======================= Start Header Area ============================== -->
 
