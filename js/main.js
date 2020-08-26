@@ -1,11 +1,3 @@
-// Need to make a function that gets rid of a preloader
-
-window.addEventListener('load', () => {
-const preload = document.querySelector('.preload');
-    preload.classList.add('preload-finish');
-});
-
-
 $(document).ready(function () {
 
 
