@@ -33,26 +33,30 @@ position: fixed;
 	height: 100px;
 	position: absolute;
 	right: 0%;
+	z-index: -1;
 }
 
 .cloud1{
 top: 25%;	
 	transform: translate(100%, -25%);
+	animation: clouds 3s ease infinite;
 }
 
 .cloud2{
 top: 50%;
 	transform: translate(100%, -50%);
+	animation: clouds 3s ease infinite 2s;
 }
 
 .cloud3{
 top: 75%;	
 	transform: translate(100%, -75%);
+	animation: clouds 3s ease infinite 1.5s;
 }
 
 .airplane{
-	height: 200px;
-	animation: airplane 1s ease infinite;
+	height: 100px;
+	animation: airplane 1s ease infinite alternate;
 }
 
 .preload h3{
@@ -60,7 +64,7 @@ position: absolute;
 	top: 75%;
 	transform: translateY(-75%);
 	color: white;
-	font-size: 40px;
+	font-size: 30px;
 	font-family: sans-serif;
 }
 
@@ -72,6 +76,17 @@ transform: translateY(0px);
 	transform: translateY(50px);	
 	}
 }
+
+@keyframes clouds{
+	from{
+right: 0px;
+	}
+	to{
+right: 130%;	
+	}
+}
+
+
 
 /* start navigation */ 
 
