@@ -68,25 +68,6 @@ position: absolute;
 	pointer-events: none;
 }
 
-@keyframes airplane{
-	from{
-transform: translateY(0px);
-	}
-	to{
-	transform: translateY(50px);	
-	}
-}
-
-@keyframes clouds{
-	from{
-right: 0px;
-	}
-	to{
-right: 130%;	
-	}
-}
-
-
 
 /* start navigation */ 
 
@@ -121,6 +102,24 @@ right: 130%;
 
 
 /* end navigation */ 
+@keyframes airplane{
+	from{
+transform: translateY(0px);
+	}
+	to{
+	transform: translateY(50px);	
+	}
+}
+
+@keyframes clouds{
+	from{
+right: 0px;
+	}
+	to{
+right: 130%;	
+	}
+}
+
 
 /* Banner Area */ 
 
