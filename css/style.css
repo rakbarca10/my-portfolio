@@ -10,52 +10,96 @@
 @import url(./partials/_global.css);
 
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700'); 
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+/*
+The loaders use CSS custom properties (variables) to control the attributes of the loaders
+*/
+:root{
+	--loader-width: 70px;
+	--loader-height: 70px;
+	--loader-color-primary: #27ae60;
+	--loader-color-secondary: #eee;
+	--line-width: 3px;
+	--animation-duration: 3s;
+	--loader-initial-scale: 0.1;
+}
+.loader,.loader:before,.loader:after{
+	box-sizing: border-box;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+/*
+In order to get optimal results, please only change the 
+variables above and don't change anything in the actual loader code
+*/
+	
+	
 
-$f-primary : 'Josefin Sans', sans-serif;
-$f-secondary : 'Indie Flower', cursive;
-$c-front : #FFFFFF;
-$c-back : #1D1F20;
-$c-back-light : #383838;
-$c-hilight : #FFA500;
-$s-footer-height : 3rem;
+@keyframes slide {
+	0% {
+		transform: translateY(0%);
+	}
 
-%boxShadow { box-shadow: 0 0 10rem 0 #000000; }
-%boxShadow--in { box-shadow: 0 0 10rem 0 #000000 inset; }
+	25% {
+		transform: translateY(100%);
+	}
 
-html, body { width: 100%; height: 100%; }
-body { @extend %boxShadow--in; box-sizing: border-box; display: flex; align-items: center; justify-content: center; padding-bottom: $s-footer-height; background-color: $c-back; color: $c-front; font-family: $f-primary; font-size: 10px; font-weight: 100; box-shadow: 0 0 10rem 0 #000000 inset; }
-footer { position: fixed; bottom: 0; left: 0; width: 100vw; height: $s-footer-height; background-color: $c-back; text-align: center; font-family: $f-secondary; font-size: 1.2rem; letter-spacing: 0.1rem; span { font-family: $f-primary; font-size: 1rem; font-weight: 100; } }
-a { text-decoration: none; color: $c-hilight; &:hover { text-decoration: underline; } }
-//////////////////////////////////////////////////
-//////////////////////////////////////////////////
+	50% {
+		transform: translateY(100%);
+	}
 
-.svg-calLoader {
-   width: 230px; height: 230px;
-  transform-origin: 115px 115px;
-  animation: 1.4s linear infinite loader-spin;
+	75% {
+		transform: translateY(0%);		
+	}
+
+	100% {
+		transform: translateY(0%);		
+	}
 }
 
-.cal-loader__plane { fill: $c-hilight; }
-.cal-loader__path { stroke: $c-front; animation: 1.4s ease-in-out infinite loader-path; }
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
 
-@keyframes loader-spin {
-  to{
-    transform: rotate(360deg);
-  }
+	25% {
+		transform: rotate(0deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	75% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
-@keyframes loader-path {
-  0%{
-    stroke-dasharray:  0, 580, 0, 0, 0, 0, 0, 0, 0;
-  }
-  50%{
-    stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
-  }
-  100%{
-    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
-  }
+
+.loader.hour-glass {
+	position: relative;
+	width: var(--loader-width, 100px);
+	height: var(--loader-height, 100px);
+	background-color: var(--loader-color-primary, #00f);
+	-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
+	clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
+	overflow: hidden;
+	animation: spin var(--animation-duration, 4s) infinite ease-in-out;
 }
+
+.hour-glass:before {
+	content: "";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: var(--loader-width, 100px);
+	height: 50%;
+	background-color: var(--loader-color-secondary, #eee);
+	animation: slide var(--animation-duration, 4s) infinite ease-in-out;
+}
+
 
 .hide-loader{
 display:none;
