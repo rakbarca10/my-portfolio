@@ -298,7 +298,7 @@ display:none;
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
