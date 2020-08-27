@@ -10,96 +10,23 @@
 @import url(./partials/_global.css);
 
 
-/*
-The loaders use CSS custom properties (variables) to control the attributes of the loaders
-*/
-:root{
-	--loader-width: 70px;
-	--loader-height: 70px;
-	--loader-color-primary: #27ae60;
-	--loader-color-secondary: #eee;
-	--line-width: 3px;
-	--animation-duration: 3s;
-	--loader-initial-scale: 0.1;
+.loader {
+    border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-right: 16px solid green;
+  border-bottom: 16px solid red;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
+ }
+
+@-webkit-keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
-.loader,.loader:before,.loader:after{
-	box-sizing: border-box;
-	flex-grow: 0;
-	flex-shrink: 0;
-}
-/*
-In order to get optimal results, please only change the 
-variables above and don't change anything in the actual loader code
-*/
-	
-	
-
-@keyframes slide {
-	0% {
-		transform: translateY(0%);
-	}
-
-	25% {
-		transform: translateY(100%);
-	}
-
-	50% {
-		transform: translateY(100%);
-	}
-
-	75% {
-		transform: translateY(0%);		
-	}
-
-	100% {
-		transform: translateY(0%);		
-	}
-}
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	25% {
-		transform: rotate(0deg);
-	}
-
-	50% {
-		transform: rotate(180deg);
-	}
-
-	75% {
-		transform: rotate(180deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
-	}
-}
-
-.loader.hour-glass {
-	position: relative;
-	width: var(--loader-width, 100px);
-	height: var(--loader-height, 100px);
-	background-color: var(--loader-color-primary, #00f);
-	-webkit-clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
-	clip-path: polygon(0% 0%, 100% 0%, 50% 50%, 100% 100%, 0% 100%, 50% 50%);
-	overflow: hidden;
-	animation: spin var(--animation-duration, 4s) infinite ease-in-out;
-}
-
-.hour-glass:before {
-	content: "";
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: var(--loader-width, 100px);
-	height: 50%;
-	background-color: var(--loader-color-secondary, #eee);
-	animation: slide var(--animation-duration, 4s) infinite ease-in-out;
-}
-
 
 .hide-loader{
 display:none;
