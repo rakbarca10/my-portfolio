@@ -253,7 +253,7 @@ display:none;
 }
 
 /* Remove extra left and right margins, due to padding */
-.row {margin: 0 -20px;}
+.row {margin: 0 -40px;}
 
 /* Clear floats after the columns */
 .row:after {
