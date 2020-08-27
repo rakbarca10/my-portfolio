@@ -11,7 +11,6 @@
 
 
 .loader {
-	align: center;
     border: 16px solid #f3f3f3;
   border-radius: 50%;
   border-top: 16px solid blue;
@@ -20,8 +19,8 @@
   border-left: 16px solid pink;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  -webkit-animation: spin 4s linear infinite;
+  animation: spin 4s linear infinite;
  }
 
 @-webkit-keyframes spin {
