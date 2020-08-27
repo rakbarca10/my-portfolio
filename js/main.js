@@ -1,4 +1,4 @@
-
+ $('#loader').addClass("hide-loader");
 
 
 $(document).ready(function () {
