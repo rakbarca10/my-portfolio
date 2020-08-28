@@ -320,6 +320,12 @@ display:none;
 
 /* End Services Area */ 
 /* Counter Area*/
+.column1 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
 
     
 /* End Counter Area*/
