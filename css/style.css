@@ -321,11 +321,7 @@ display:none;
 /* End Services Area */ 
 /* Counter Area*/
 
-body { 
-            text-align: center; 
-        } 
-        
-        /* Float three columns */ 
+     /* Float three columns */ 
         .column { 
             float: left; 
             width: 25%; 
