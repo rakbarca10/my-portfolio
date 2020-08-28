@@ -397,7 +397,41 @@ display:none;
 
 
 
-/* End About Me */ 
+/* End About Me */
+
+
+ /* Float three columns */ 
+        .column1 { 
+            float: left; 
+            width: 25%; 
+            padding: 0 5px; 
+        } 
+          
+        .row1 { 
+            margin: 0 -5px; 
+        } 
+        
+        /* Clear floats after the columns */ 
+        .row1:after { 
+            content: ""; 
+            display: table; 
+        } 
+        
+        
+        /* Style the cards */ 
+        .card { 
+            padding: -10px; 
+            text-align: center; 
+            background-color: gray; 
+            color: white; 
+        } 
+          
+        .card:hover { 
+            transform: scale(1.1); 
+            background-color: black; 
+            transition-duration: 2s; 
+            color: white; 
+        } 
 
 /* Subscribe me */ 
 
