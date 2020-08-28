@@ -322,18 +322,18 @@ display:none;
 /* Counter Area*/
 
      /* Float three columns */ 
-        .column { 
+        .column1 { 
             float: left; 
             width: 25%; 
             padding: 0 5px; 
         } 
           
-        .row { 
+        .row1 { 
             margin: 0 -5px; 
         } 
         
         /* Clear floats after the columns */ 
-        .row:after { 
+        .row1:after { 
             content: ""; 
             display: table; 
         } 
