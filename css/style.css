@@ -378,6 +378,7 @@ display:none;
     color: #fff;
     line-height: 33px;
     position: relative;
+    text-align: center;
 }
 .testimonial .description:before,
 .testimonial .description:after{
