@@ -444,9 +444,6 @@ display:none;
 /*End Testimonial Area*/
 
 /*Contact*/
-.contact{
-	padding:50px 0;
-}
 .contact .info-box{
     color: var(--second-color);
     text-align: center;
