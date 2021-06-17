@@ -443,6 +443,59 @@ display:none;
 
 /*End Testimonial Area*/
 
+/*Contact*/
+.contact{
+	padding:50px 0;
+}
+.contact .info-box{
+    color: var(--second-color);
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 0 5px #bababa;
+    padding: 10px 30px;
+}
+.contact .info-box .share{
+	 font-size: 25px;
+     color: var(--heading-color);
+     padding: 15px;
+}
+.contact .info-box h3{
+	font-size: 28px;
+	color: var(--second-color);
+	font-weight: bold;
+	margin-top: 10px;
+  font-family: 'Markazi Text', serif;
+}
+.contact .info-box .social-links{
+	 margin-top: 18px;
+     display: flex;
+     justify-content: center;
+}
+.contact .info-box .social-links .fa{
+	font-size: 20px;
+  display: inline-block;
+  background: #efefef;
+  color: var(--second-color);
+  line-height: 1;
+  padding: 8px 0;
+  margin:0 15px 0 15px;
+  border-radius: 50%;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  transition: 0.3s;
+}
+.contact .info-box .social-links .fa:hover{
+	color: var(--first-color);
+  background:var(--line-color);
+}
+.contact .info-box .info-detail p{
+	font-size:17px;
+    display: inline-block;
+    color: var(--second-color);
+    line-height: 2;
+    margin: 12px;
+}
 
 
 
