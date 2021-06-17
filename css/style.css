@@ -760,6 +760,55 @@ display:none;
 
 / --- END ---/
 
+/*Footer*/
+.footer{
+	height: 50vh;
+	background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(images/footer.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-top: 60px;
+}
+.footer h2{
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--first-color);
+  position: relative;
+  font-family: 'Markazi Text', serif;
+  padding: 40px;
+  margin: 20px 0 15px 0;
+}
+.footer p{
+   font-size: 15px;
+   text-align: center;
+   margin-top:-50px;
+   color: var(--first-color);
+}
+.footer .social-links{
+  display: flex;
+  justify-content: center;
+}
+.footer .social-links .fa{
+  font-size: 20px;
+  display: inline-block;
+  background: var(--line-color);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+.footer .copyright{
+	padding: 100px 0 10px 0;
+	font-family: 'Markazi Text', serif;
+	font-weight: 300;
+	font-size: 22px;
+}
+
 
 
  
