@@ -670,6 +670,96 @@ display:none;
 
 /* End About Me */
 
+/* --- CONTACT NEW --/
+/*Contact*/
+.contact{
+	padding:50px 0;
+}
+.contact .Contactform{
+    box-shadow: 0 0 5px #bababa;
+    padding: 20px;
+    margin-top: 30px;
+}
+.contact .Contactform input{
+    padding: 20px 15px;
+}
+.contact .Contactform textarea{
+   padding: 12px 15px;
+}
+.contact .Contactform input, .contact .Contactform textarea{
+	border-radius: 5px;
+	box-shadow: none;
+	font-size: 16px;
+	opacity: 0.8;
+}
+.contact .Contactform .submit{
+    padding: 10px 20px;
+    transition: 0.4s;
+    border-radius: 5px;
+    font-family: 'Markazi Text', serif;
+    font-size: 22px;
+    font-weight: 500;
+    background: var(--first-color);
+    color: var(--second-color);
+    border:1px solid var(--line-color);
+}
+.contact .Contactform .submit:hover{
+	color: var(--first-color);
+  background:var(--line-color);
+}
+.contact .info-box{
+    color: var(--second-color);
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 0 5px #bababa;
+    padding: 10px 30px;
+}
+.contact .info-box .share{
+	 font-size: 25px;
+     color: var(--heading-color);
+     padding: 15px;
+}
+.contact .info-box h3{
+	font-size: 28px;
+	color: var(--second-color);
+	font-weight: bold;
+	margin-top: 10px;
+  font-family: 'Markazi Text', serif;
+}
+.contact .info-box .social-links{
+	 margin-top: 18px;
+     display: flex;
+     justify-content: center;
+}
+.contact .info-box .social-links .fa{
+	font-size: 20px;
+  display: inline-block;
+  background: #efefef;
+  color: var(--second-color);
+  line-height: 1;
+  padding: 8px 0;
+  margin:0 15px 0 15px;
+  border-radius: 50%;
+  text-align: center;
+  width: 38px;
+  height: 38px;
+  transition: 0.3s;
+}
+.contact .info-box .social-links .fa:hover{
+	color: var(--first-color);
+  background:var(--line-color);
+}
+.contact .info-box .info-detail p{
+	font-size:17px;
+    display: inline-block;
+    color: var(--second-color);
+    line-height: 2;
+    margin: 12px;
+}
+
+
+/ --- END ---/
+
 
 
  
