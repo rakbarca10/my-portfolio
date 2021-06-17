@@ -384,6 +384,205 @@ display:none;
 
 /*----End Popular---*/
 
+/* --- Extra New Section ---/
+/*Services*/
+.services{
+	padding: 80px 0;
+	background-color: #efefef;
+}
+.services .box{
+	padding: 30px;
+	width: 350px;
+	background:var(--first-color);
+	text-align: center;
+	border:0px solid var(--second-color);
+	margin:10px auto;
+	box-shadow: 0 0 5px #bababa;
+	overflow: hidden; 
+	position: relative;
+}
+.services .icon{
+	 margin: 0 auto 20px auto;
+	 display: inline-block;
+     text-align: center;  
+}
+.services .icon .fa{
+	font-size: 50px;
+    line-height: 1;
+    color: #c0392b;
+}
+.services .title{
+	font-weight: 500;
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-family: 'Markazi Text', serif;
+}
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.services .box:before{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-bottom: 2px solid var(--line-color);
+	border-left: 2px solid var(--line-color);
+	bottom: 5%;
+	left: 5%;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+.services .box:after{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 2px solid var(--line-color);
+	border-right: 2px solid var(--line-color);
+	top: 5%;
+	right: 5%;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+.services .box:hover:before,
+.services .box:hover:after{
+	opacity: 1;
+    width: 90%;
+    height: 90%;
+}
+
+@media screen and (max-width: 768px){
+  .services .box{
+    width: 100%;
+  }
+}
+
+/*Count*/
+.count{
+	padding: 50px 0;
+}
+.count .count-box .fa{
+	 display: block;
+     font-size: 50px;
+     margin-bottom: 18px;
+}
+.count .count-box span{
+	font-size: 40px;
+    line-height: 30px;
+    display: block;
+    font-weight: 700;
+    color: #3b434a;
+    margin-left: -5px;
+}
+.count .count-box h6{
+	font-size: 25px;
+	color: var(--second-color);
+	font-weight: bold;
+	margin-top: 15px;
+    font-family: 'Markazi Text', serif;
+}
+.count .count-box p{
+	 font-weight: 400;
+     display: block;
+     margin-top: 20px;
+     margin-left: 15px;
+     color: #34495e;
+     font-size: 15px;
+     transition: ease-in-out 0.3s;
+}
+
+
+/*Portfolio*/
+.portfolio{
+	padding: 100px 0;
+	background-color: #efefef;
+}
+.portfolio p{
+  margin-bottom: 25px;
+}
+.portfolio #portfolio-flters li{
+   list-style: none;
+   background-color: var(--first-color);
+   padding: 14px 15px;
+   margin: 0 10px 10px 10px;
+   color: var(--second-color);
+   display: inline-block;
+   cursor: pointer;
+   line-height: 1;
+   text-transform: uppercase;
+   transition: all 0.3s ease-in-out;
+   border-radius: 5px;
+}
+.portfolio #portfolio-flters li:hover{
+   background:var(--heading-color);
+   color: var(--second-color);
+}
+.portfolio #portfolio-flters li.filter-active{
+   background:var(--heading-color);
+   color: var(--second-color);
+}
+.portfolio .portfolio-item{
+   margin-bottom: 30px;
+}
+.portfolio .portfolio-item .portfolio-img{
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 0 5px #bababa;
+}
+.portfolio .portfolio-item .portfolio-img img{
+   transition: all 0.8s ease-in-out;
+}
+.portfolio .portfolio-item .portfolio-content{
+   opacity: 0;
+   position: absolute;
+   left: 15px;
+   bottom: 0;
+   border-radius: 10px;
+   z-index: 3;
+   right: 15px;
+   transition: all ease-in-out 0.3s;
+   background: rgba(0, 0, 0, 0.6);
+   padding: 15px 18px;
+}
+.portfolio .portfolio-item .portfolio-content h4{
+   font-size: 22px;
+   letter-spacing: 1px;
+   font-family: 'Markazi Text', serif;
+   color:var(--first-color);
+   font-weight: 600;
+   margin-bottom: 0;
+}
+.portfolio .portfolio-item .portfolio-content p{
+   color: var(--first-color);
+   font-size: 15px;
+   font-weight: 300;
+   margin-bottom: 0;
+}
+.portfolio .portfolio-item .portfolio-content .preview-link, .portfolio .portfolio-item .portfolio-content .details-link{
+   position: absolute;
+   right: 40px;
+   font-size: 20px;
+   top: calc(50% - 18px);
+   color: var(--first-color);
+   transition: 0.3s;
+}
+.portfolio .portfolio-item .portfolio-content .preview-link:hover, .portfolio .portfolio-item .portfolio-content .details-link:hover {
+   color: var(--line-color);
+}
+.portfolio .portfolio-item .portfolio-content .details-link{
+   right: 10px;
+}
+.portfolio .portfolio-item:hover .portfolio-img img{
+   transform: scale(1.1);
+}
+.portfolio .portfolio-item:hover .portfolio-content{
+   opacity: 1;
+}
+
+/* -- END --/
+
 
 
 
