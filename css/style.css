@@ -444,55 +444,50 @@ display:none;
 /*End Testimonial Area*/
 
 /*Contact*/
-.contact .info-box{
-    color: var(--second-color);
-    text-align: center;
-    margin-top: 30px;
-    box-shadow: 0 0 5px #bababa;
-    padding: 10px 30px;
-}
-.contact .info-box .share{
-	 font-size: 25px;
-     color: var(--heading-color);
-     padding: 15px;
-}
-.contact .info-box h3{
-	font-size: 28px;
-	color: var(--second-color);
-	font-weight: bold;
-	margin-top: 10px;
-  font-family: 'Markazi Text', serif;
-}
-.contact .info-box .social-links{
-	 margin-top: 18px;
-     display: flex;
-     justify-content: center;
-}
-.contact .info-box .social-links .fa{
-	font-size: 20px;
-  display: inline-block;
-  background: #efefef;
-  color: var(--second-color);
-  line-height: 1;
-  padding: 8px 0;
-  margin:0 15px 0 15px;
-  border-radius: 50%;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
   text-align: center;
-  width: 38px;
-  height: 38px;
-  transition: 0.3s;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
-.contact .info-box .social-links .fa:hover{
-	color: var(--first-color);
-  background:var(--line-color);
+
+.fa:hover {
+    opacity: 0.7;
 }
-.contact .info-box .info-detail p{
-	font-size:17px;
-    display: inline-block;
-    color: var(--second-color);
-    line-height: 2;
-    margin: 12px;
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-github {
+  background: #F4CBB2;
+  color: white;
+}
+
+
 
 
 
