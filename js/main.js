@@ -80,6 +80,19 @@ $(document).ready(function () {
     offset: '80%'
   });
 
+
+
+
+
+
+// Testimonial
+ $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    items: 1
+  });
+
 // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -110,14 +123,3 @@ $(document).ready(function () {
   });
 
 })(jQuery);
-
-
-
-
-// Testimonial
- $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
