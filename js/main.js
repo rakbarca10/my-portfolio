@@ -65,6 +65,26 @@ $(document).ready(function () {
 
 });
 
+
+<div class="pd-embed" id="pd_1630851296898"></div>
+<script type="text/javascript">
+var _polldaddy = [] || _polldaddy;
+
+_polldaddy.push( {
+	type: 'slider',
+	title: 'Take Our Survey!',
+	body: 'Please help us find out what you think by taking our survey at Crowdsignal.com',
+    button: 'Get Started &raquo;',
+    domain: 'rakbarca.survey.fm',
+    id: 'first-survey',
+    placeholder: 'pd_1630851296898'
+} );
+
+(function(d,c,j){if(!document.getElementById(j)){var pd=d.createElement(c),s;pd.id=j;pd.src=('https:'==document.location.protocol)?'https://polldaddy.com/js/survey/public-embed.js':'https://polldaddy.com/js/survey/public-embed.js';s=document.getElementsByTagName(c)[0];s.parentNode.insertBefore(pd,s);}}(document,'script','pd-embed'));
+</script>
+<noscript><a href="https://rakbarca.survey.fm/first-survey">Take Our Survey!</a></noscript>
+ 
+
 // Testimonial
  $(".testimonials-carousel").owlCarousel({
     autoplay: true,
