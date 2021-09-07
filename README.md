@@ -1,4 +1,4 @@
-# PortFolio_Website
+# Open-Web-Analytics
+Official Git Repository for the Open Web Analytics Project.
 
-https://www.rakshith.tech/
-
+See the wiki on Github for documentation. 
