@@ -1,4 +1,4 @@
-# Open-Web-Analytics
-Official Git Repository for the Open Web Analytics Project.
+# My Portfolio Website
+Official Git Repository for My Website.
 
-See the wiki on Github for documentation. 
+Check it out at - https://rakshith.tech/
