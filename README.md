@@ -1,4 +1,4 @@
 # My Portfolio Website
 Official Git Repository for My Website.
 
-Check it out at - https://rakshith.tech/
+Check it out at - https://rakshith10-portfolio.netlify.app/
